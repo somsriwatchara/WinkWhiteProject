@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.torey.winkwhiteproject.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.torey.winkwhiteproject.MainActivity"-->
+    <!--&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:contentDescription="@null"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:scaleType="centerCrop"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;android:src="@drawable/image_view1"&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;android:tint="#66000000" &ndash;&gt;&ndash;&gt;-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/wink"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/logo_wink_white"-->
+        <!--android:layout_margin="25dp"-->
+        <!--android:contentDescription="@null" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/wink"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Welcome"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingBottom="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#000000"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="italic"/>&ndash;&gt;-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="vertical">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/logo_id"-->
+                <!--/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/user_name"-->
+                <!--android:maxLines="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:inputType="text" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/logo_password"-->
+                <!--/>-->
+            <!--<EditText-->
+                <!--android:maxLines="1"-->
+                <!--android:id="@+id/frist_password"-->
+                <!--android:inputType="numberPassword"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="25dp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="1">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/sing_in"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:background="@drawable/login_selector"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/sign_in"-->
+                <!--android:textColor="#000000" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/sing_up"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/click_selector"-->
+                <!--android:text="@string/sign_up"-->
+                <!--android:textColor="#FFFFFF" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:textColor="#bf3c3a3a"-->
+            <!--android:text="@string/created_by"/>-->
+    <!--</LinearLayout>-->
+
+<!--</RelativeLayout>-->
